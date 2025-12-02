@@ -74,3 +74,4 @@ const cheese = new perishableProductProperties("Cheese", 4, 2, "2026-01-21");
 const newStore = new store();
 newStore.addProduct(ramen);
 newStore.addProduct(rice);
+newStore.addProduct(seasoning);
