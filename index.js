@@ -75,3 +75,4 @@ const newStore = new store();
 newStore.addProduct(ramen);
 newStore.addProduct(rice);
 newStore.addProduct(seasoning);
+newStore.addProduct(basil);
