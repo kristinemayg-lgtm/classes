@@ -23,7 +23,11 @@ toString() {
 
 //Create a subclass: Perishable Product Properties
 class perishableProductProperties extends productProperties {
-    displayInfo() {
-        console.log(`Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`);
+    constructor(name, price, quantity, expirationDate) {
+        super(name, price, quantity);
+        this.expirationDate = expirationDate;
+    }
+    toString() {
+        return `Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`;
     }
 }
