@@ -43,4 +43,14 @@ const yogurt = new perishableProductProperties("Yogurt", 4.00, 12, "2027-05-21")
 const bread = new perishableProductProperties("Bread", 5.50, 2, "2025-12-25");
 console.log(yogurt.toString());
 console.log(bread.toString());
-
+//Store class inventory
+class store {
+    constructor () {
+         //stores products and perishable objects
+        this.inventory = [];
+    }
+    //Adds product to inventory
+addProduct(product) {
+    this.inventory.push(product);
+}
+}
