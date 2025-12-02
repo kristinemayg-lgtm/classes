@@ -76,3 +76,4 @@ newStore.addProduct(ramen);
 newStore.addProduct(rice);
 newStore.addProduct(seasoning);
 newStore.addProduct(basil);
+newStore.addProduct(cheese);
