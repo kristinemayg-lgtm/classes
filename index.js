@@ -64,9 +64,11 @@ findProductByName(name) {
 }
 
 //Testing the system
-
+//Create products
 const ramen = new productProperties("Ramen", 2.50, 20);
 const rice = new productProperties("Rice", 16.99, 1);
 const seasoning = new productProperties("Seasoning", 3.75, 2);
 const basil = new perishableProductProperties("Basil", 1.99, 2, "2025-12-5");
 const cheese = new perishableProductProperties("Cheese", 4, 2, "2026-01-21");
+//Create store
+const newStore = new store();
