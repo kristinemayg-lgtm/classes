@@ -84,3 +84,6 @@ console.log("Total Inventory Value Before Discount: $" + newStore.getInventoryVa
 productProperties.applyDiscount(newStore.inventory, 0.15);
 //Printing after discount
 console.log("Total Inventory Value After 15% Discount: $" + newStore.getInventoryValue());
+//Find and print details of specific product by name
+const findProduct = newStore.findProductByName("Rice");
+console.log("Found Product:", findProduct ? findProduct.toString() : "No Results Found");
