@@ -20,3 +20,10 @@ toString() {
     return `Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`;
 }
 }
+
+//Create a subclass: Perishable Product Properties
+class perishableProductProperties extends productProperties {
+    displayInfo() {
+        console.log(`Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`);
+    }
+}
