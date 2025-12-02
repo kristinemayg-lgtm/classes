@@ -19,6 +19,12 @@ getTotalValue() {
 toString() {
     return `Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`;
 }
+//Add a static method to product
+static applyDiscount(products, discount) {
+    productProperties.forEach(product => {
+        product.price = product.price - (product.price * discount);
+    });
+}
 }
 
 //Create a subclass: Perishable Product Properties
@@ -37,3 +43,4 @@ const yogurt = new perishableProductProperties("Yogurt", 4.00, 12, "2027-05-21")
 const bread = new perishableProductProperties("Bread", 5.50, 2, "2025-12-25");
 console.log(yogurt.toString());
 console.log(bread.toString());
+
