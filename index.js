@@ -72,3 +72,4 @@ const basil = new perishableProductProperties("Basil", 1.99, 2, "2025-12-5");
 const cheese = new perishableProductProperties("Cheese", 4, 2, "2026-01-21");
 //Create store
 const newStore = new store();
+newStore.addProduct(ramen);
