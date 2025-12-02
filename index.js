@@ -79,6 +79,8 @@ newStore.addProduct(seasoning);
 newStore.addProduct(basil);
 newStore.addProduct(cheese);
 //Printing total inventory value before 15% discount
-console.log("Total Inventory Value Before Discount: $" + newStore.getInventoryValue);
+console.log("Total Inventory Value Before Discount: $" + newStore.getInventoryValue());
 //Apply discount
 productProperties.applyDiscount(newStore.inventory, 0.15);
+//Printing after discount
+console.log("Total Inventory Value After 15% Discount: $" + newStore.getInventoryValue());
